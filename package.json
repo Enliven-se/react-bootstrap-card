@@ -1,25 +1,26 @@
 {
   "name": "react-bootstrap-card",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "React Bootstrap Card components",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/isuvorov/react-bootstrap-card.git"
   },
   "contributors": [
-    "Igor Suvorov <hi@isuvorov.ru> (http://isuvorov.ru)"
+    "Igor Suvorov <hi@isuvorov.ru> (http://isuvorov.ru)",
+    "Daniel \"Klokie\" Grossfeld <github@klokie.com> (https://klokie.com)"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/isuvorov/react-bootstrap-card/issues"
+    "url": "https://github.com/Enliven-se/react-bootstrap-card/issues"
   },
-  "homepage": "https://github.com/isuvorov/react-bootstrap-card#readme",
-
+  "homepage": "https://github.com/Enliven-se/react-bootstrap-card#readme",
 
   "main": "index.js",
   "scripts": {
     "release": "DEBUG=0 npm run build && npm publish dist",
-    "build": "rm -rf dist && mkdir dist && cp {package.json,yarn.lock,README.md} dist/ && babel src --out-dir dist --source-maps inline --copy-files",
+    "build":
+      "rm -rf dist && mkdir dist && cp {package.json,yarn.lock,README.md} dist/ && babel src --out-dir dist --source-maps inline --copy-files",
     "dev": "DEBUG=1 npm run build -- --watch"
   },
 
@@ -27,7 +28,7 @@
     "classnames": "^2.2.3"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0",
+    "react": "^16.0.0",
     "react-bootstrap": "^0.30.7"
   },
   "devDependencies": {
